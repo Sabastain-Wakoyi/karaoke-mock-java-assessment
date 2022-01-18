@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Song {
@@ -35,4 +37,10 @@ public class Song {
     public void setLyrics(List<String> lyrics) {
         this.lyrics = lyrics;
     }
+
+    public static List<String> parseLyrics(String lyrics){
+        List<String> songs = new LinkedList<>();
+        String[] pastlyrics = lyrics.split(" ");
+    }
+
 }
