@@ -41,6 +41,10 @@ public class Song {
     public static List<String> parseLyrics(String lyrics){
         List<String> songs = new LinkedList<>();
         String[] pastlyrics = lyrics.split(" ");
+        for(String words: pastlyrics){
+            songs.add(words);
+        }
+        return songs;
     }
 
 }
