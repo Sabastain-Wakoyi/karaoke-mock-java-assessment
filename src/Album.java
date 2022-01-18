@@ -24,4 +24,11 @@ public class Album {
     public void setSongs(List<Song> songs) {
         this.songs = songs;
     }
+
+    public void printTrackListings(){
+        System.out.println(name);
+        for(Song song: songs){
+            System.out.println(song.getTitle()+ " "+ song.getArtist());
+        }
+    }
 }
